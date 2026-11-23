@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Greenleaf Studio - a responsive web design demo page that adapts to desktops, tablets and smartphones.">
+  <title>Greenleaf Studio | Responsive Web Design Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">Greenleaf<span>Studio</span></a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Design that fits every screen</h1>
+          <p>We build fast, flexible websites that look great on desktops, tablets and smartphones.</p>
+          <a class="btn" href="#contact">Start a project</a>
+        </div>
+        <figure class="hero-figure">
+          <img src="images/hero.svg" alt="Illustration of a laptop, tablet and phone showing the same website" width="600" height="400">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <h2>What we do</h2>
+        <p class="section-intro">Four core services, laid out in a flexible grid that reflows as the screen changes size.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Responsive Layouts</h3>
+            <p>Fluid grids and flexible containers that adapt to any viewport width.</p>
+          </article>
+          <article class="card">
+            <h3>Mobile First</h3>
+            <p>We start with the smallest screen and progressively enhance for larger ones.</p>
+          </article>
+          <article class="card">
+            <h3>Fast Performance</h3>
+            <p>Lightweight code and scalable images keep pages quick on any connection.</p>
+          </article>
+          <article class="card">
+            <h3>Accessible by Design</h3>
+            <p>Semantic markup, good contrast and keyboard-friendly navigation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <p class="section-intro">Fluid images scale with their container and never overflow it.</p>
+        <div class="gallery">
+          <figure>
+            <img src="images/gallery-1.svg" alt="Abstract green hills at sunrise" width="400" height="300" loading="lazy">
+            <figcaption>Sunrise Hills</figcaption>
+          </figure>
+          <figure>
+            <img src="images/gallery-2.svg" alt="Abstract blue waves" width="400" height="300" loading="lazy">
+            <figcaption>Blue Waves</figcaption>
+          </figure>
+          <figure>
+            <img src="images/gallery-3.svg" alt="Abstract orange sunset over mountains" width="400" height="300" loading="lazy">
+            <figcaption>Sunset Peaks</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about-text">
+          <h2>About us</h2>
+          <p>Greenleaf Studio is a small team of designers and developers who believe the web should work for everyone, on every device.</p>
+          <p>This page is a demonstration project for responsive web design using HTML5, CSS Grid, Flexbox, fluid typography and media queries.</p>
+        </div>
+        <ul class="stats">
+          <li><strong>3</strong> breakpoints</li>
+          <li><strong>100%</strong> fluid images</li>
+          <li><strong>0</strong> JavaScript</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <h2>Contact us</h2>
+        <form class="contact-form" action="#" method="post">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="field field-full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Greenleaf Studio. All rights reserved.</p>
+      <p>Built for the Week 2 Responsive Web Design task.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
